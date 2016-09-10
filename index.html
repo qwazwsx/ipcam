@@ -134,7 +134,7 @@ urlIP = urlIP.substring(0, urlIP.indexOf(':'))
 }
 
 
-$.getJSON('http://api.ipinfodb.com/v3/ip-city/?key=e29b04eb4855182960b55e3784dc53ef7b68cc1317aae711a0453f5e15853fb5&ip=' + urlIP + '&format=json', function(data) {
+$.getJSON('https://api.ipinfodb.com/v3/ip-city/?key=e29b04eb4855182960b55e3784dc53ef7b68cc1317aae711a0453f5e15853fb5&ip=' + urlIP + '&format=json', function(data) {
 //console.log(data);
 
 var objJSON = eval("(function(){return " + JSON.stringify(data) + ";})()");
